@@ -15,6 +15,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo "deploying"
+        sh 'gradlew assembleDebug '
       }
     }
   }
