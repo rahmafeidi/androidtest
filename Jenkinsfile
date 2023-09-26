@@ -15,6 +15,7 @@ pipeline {
     stage('Deploy') {
       steps {
         echo "deploying"
+       sh ' export ANDROID_HOME=/home/ubuntu/Android/Sdk'
   
         sh './gradlew test '
       }
