@@ -16,7 +16,7 @@ pipeline {
       steps {
         echo "deploying"
   
-        sh './gradlew test '
+        sh 'gradle test '
       }
     }
   }
