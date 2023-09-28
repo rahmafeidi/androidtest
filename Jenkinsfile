@@ -17,7 +17,7 @@ pipeline {
         echo "deploying"
        sh ' export ANDROID_SDK_ROOT=/home/ubuntu/Android/Sdk'
   
-        sh './gradlew assembleDebug '
+        sh 'gradlew.bat assembleDebug '
         sh './gradlew installDebug '
       }
     }
